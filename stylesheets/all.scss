@@ -1,0 +1,32 @@
+@import "components/reset";
+@import "helpers/_variables";
+@import "components/pure";
+
+//Layout
+@import "components/navbar";
+@import "components/footer";
+
+
+// index star
+@import "components/header";
+@import "components/main";
+@import "components/form";
+
+
+// cart star
+@import "components/cartSide";
+@import "components/cartMain";
+
+
+// login star
+@import "components/loginform";
+
+
+// other star
+@import "components/btnStyle";
+
+
+
+
+
+

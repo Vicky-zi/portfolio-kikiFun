@@ -1,0 +1,265 @@
+.main-2 {
+	color:  $primary;
+	display: flex;
+	text-align:center;
+	align-items: baseline;
+	padding: 0 4%;
+}
+
+.search-style {
+	color: #555;
+	display: flex;
+	padding: 2px;
+	border: 1px solid currentColor;
+	border-radius: 5px;
+}
+
+input[type="search"] {
+	border: none;
+	background: transparent;
+	margin: 0;
+	padding: 7px 8px;
+	font-size: 14px;
+	color: inherit;
+	border: 1px solid transparent;
+	border-radius: inherit;
+
+	button {
+		text-indent: -999px;
+		overflow: hidden;
+		width: 40px;
+		padding: 0;
+		margin: 0;
+		border: 1px solid transparent;
+		border-radius: inherit;
+		background: transparent url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E") no-repeat center;
+		cursor: pointer;
+		opacity: 0.7;
+
+		&:hover {
+			opacity: 1;
+		  }
+	  }
+
+
+  }
+  
+  input[type="search"]::placeholder {
+	color: #bbb;
+  }
+
+  
+  .search-style button:focus,input[type="search"]:focus {
+  box-shadow: 0 0 3px 0 #1183d6;
+  border-color: #1183d6;
+  outline: none;
+}
+
+  
+
+
+.column {
+	width: 75%;
+	padding: 0;
+	margin: 0;
+}
+.column-t {
+	display: flex;
+	justify-content: space-between;
+	margin:3% 0;
+}
+.pure-form {
+	position: relative;
+ 	width: 65%;
+ 	
+}
+.pure-input-rounded {
+	width: 100%;
+	 height: 32px;
+	 background-color: #efe9e7;
+}
+.pure-button {
+	position: absolute;
+ 	top: 0;
+	right: 0; 
+	cursor: pointer;
+}
+.moblie-link {
+	display: none;
+}
+
+.shopping {
+	width: 20%;
+	display: flex;
+	align-items: center;
+	line-height: 18px;
+}
+.shopping p{
+	margin : 0 10%;
+}
+
+.shopping a{
+	position: relative;
+	color: #3d1101;
+	text-decoration:none;
+}
+.number {
+	// height: 2%;
+	width: 1%;
+	color: #fff;
+	font-size: 8px;
+	background: #6eceda;
+	border-radius: 10px;
+	position: absolute;
+	right: 8%;
+    // bottom: 29%;
+
+
+}
+.pure-form {
+	display: flex;
+}
+
+.product {
+	display: flex;
+	flex-wrap: wrap;
+	text-align:center;
+	justify-content: space-between;
+	
+}
+.product li{
+	width: 32%;
+	box-shadow: 5.5px 7px 10px #cdc8c6;
+	position : relative;
+	margin-bottom: 6%;
+	line-height: 24px;
+}
+
+.signature-dish {
+	height: 20px;
+	width: 90px;
+	transform: rotate(-315deg);
+	background: #00CC99;
+	color: #fff;
+	position : absolute;
+	top : 6%;
+	right: -9%;
+}
+.signature-dish p {
+	margin-top: 7%;
+}
+
+.btn{
+	height: 20px;
+	width:20px;
+	background-image:url(../assets/heart.png); 
+	position : absolute;
+	top: 3%;
+	left: 3%;
+}
+
+/*點擊有動態載入，但沒預期的效果*/
+.btn.heart-click {    
+	background-image: url(../assets/heart-2.png);
+	background-repeat: no-repeat;
+}
+.product h4 {
+	font-size: 20px;
+	margin-top: 3%;
+}
+.product p {
+	font-size: 14px;
+	font-family: Roboto-Light;
+	line-height: 10px;
+}
+.line-b {
+	height: 1px;
+	background-color: #000;
+	margin: 5% 32% 8% 32%;
+}
+.product h5 {
+	font-size: 20px;
+	margin: 5% 0;
+}
+
+.cart {
+	width: 90%;
+	color: $secondary;
+	font-size: 16px;
+	border: 2px solid $secondary;
+	border-radius: 3px 3px;
+	align-items: center;
+}
+.cart :hover{
+	cursor: pointer;
+}
+
+.cart img{
+	height: 14px;
+	margin: 0 5%;
+}
+
+@media (max-width: 767px) {
+.warp {
+		position : relative;
+	}
+	.main-2 {
+		position: relative;
+	}
+	.aside {
+		position: absolute;
+		width: 45%;
+		top: 0;
+		bottom: 0;
+		background: #efe9e7;
+		transform: translateX(-270px);
+		transition: all .3s;
+		z-index: 99;
+	}
+	.open .aside {
+		transform: translateX(-16px);
+	}
+
+	.column {
+		margin: 0 auto;
+	}
+	
+
+	.moblie-link {
+		display: inline-block;
+		float: right;
+	}
+	.column-t input {
+		display: none;
+	} 
+	.shopping h3,.shopping p{
+		display: none;
+	}
+	.shopping img {
+		position: relative;
+    	right : 5%;
+	} 
+
+	.number {
+		height: 1%;
+		width: 3%;
+		position: absolute;
+		right: 28%;
+    	bottom: 0;
+    	top: 0.5%;
+	}
+	.product {
+		flex-direction:column;
+		margin : 0 auto;
+	}
+	.product li{
+		width: 100%;
+	}
+	.product h4 {
+		font-size: 28px;
+		margin: 5% 0;
+	}
+	.sinbar h3,.sinbar p{
+		display: none;
+	}
+}

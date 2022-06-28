@@ -1,0 +1,34 @@
+.aside {
+	width: 25%;
+	padding-right: 2%;
+
+    h3 {
+        color: $primary;
+        margin: 15% 0 8% 0;
+        font-size: 20px;
+
+    }
+
+    li {
+        padding: 5% 5%;
+        text-align: left;
+        border-bottom :1px solid $secondary;
+
+        a {
+            display: block;
+            text-decoration:none;
+            color: $primary;
+            padding-left: 5%;
+            &:hover {
+                color: #fff;
+	            cursor: pointer;
+            }
+        }
+
+        &:hover {
+            color: #fff;
+	        background-color: $primary;
+        }
+    }
+}
+

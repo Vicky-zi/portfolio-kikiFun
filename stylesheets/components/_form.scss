@@ -1,0 +1,121 @@
+/*---------------------表格*/
+.message_board{
+	color: #40719e;
+    background-image: url('https://www.toptal.com/designers/subtlepatterns/uploads/double-bubble-outline.png');
+	padding:3% 12% 5% 12%;
+	position : relative;
+
+	h2 {
+		font-size:24px;
+		 text-align:center;
+		 line-height:1.5;
+		 margin-bottom: 5%;
+
+	}
+	
+	iframe{
+		float: left;	
+	}
+	form{
+		width:48%;
+		float:right;
+
+		label{
+			 font-size:$fontsize-xs;
+			 border-radius: 5px;
+			 padding-right: 63%;
+			 margin: 2%;
+		}
+		input {
+			border: 1px solid #cccccc;
+			font-size: $fontsize-xs;
+			 border-radius: 5px;
+			 padding: 2% 50% 2% 3%;
+			 margin: 2%;
+			
+		}
+		h4 {
+			font-size: $fontsize-xs;
+			padding-left: 2%;
+			margin: 1% 0;
+		}
+		
+		.radio-btn label {
+			margin: 0;
+			padding: 0;
+		}
+	}
+
+}
+
+
+
+.buttons {
+	display: flex;
+	position : absolute;
+	bottom: 10%;
+    right: 14.3%;
+}
+.buttons button {
+	width: 100px;
+    padding: 3%;
+    border-radius:25px;
+	border: 0;
+	cursor: pointer;
+}
+
+.clearfix {
+	clear:both;
+}
+
+.error {
+    color: red;
+    margin-left: 5px;
+}
+  
+  
+  
+label.error {
+    display: block;
+}
+
+
+@media (max-width: 768px) {
+	.message_board {
+		float: none;
+		padding:10% 3% 20% 3%;
+
+		iframe{
+			width: 100%;
+			margin-bottom: 8%;
+		}
+		form{
+			width:100%;
+			float:none;
+
+				label,input {
+					width:100%;
+					margin: 2% 0;
+					padding-right: 5%;
+				}
+		}
+		.radio-btn input{
+			width: 10%;
+		}
+		.buttons {
+			bottom: 0;
+			right: 5%;
+			margin-bottom: 5%;
+		}
+	}
+	
+
+}
+
+@media (max-width: 576px) {
+	
+	.buttons {
+		right: 0;
+	}
+
+}

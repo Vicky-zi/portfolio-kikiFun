@@ -66,6 +66,62 @@ $(document).ready(function() {
 });
 // 購物車加(減)
 
+//表單驗證
+$('#form').validate({
+  /* 常用檢測屬性
+ required:必填
+ noSpace:空白
+ minlength:最小長度
+ maxlength:最大長度
+ email:信箱格式
+ number:數字格式
+ */
+ onkeyup: function(element, event) {
+   //去除左側空白
+   var value = this.elementValue(element).replace(/^\s+/g, "");
+   $(element).val(value);
+  },
+  rules: {
+    fname: {
+      required: true
+    },
+    phone:{
+      required: true,
+      minlength: 8,
+      number: true
+    },
+    email: {
+      required: true,
+      email: true
+    },
+    password: {
+      required: true,
+      maxlength: 6,
+      number: true
+    }
+  },
+  messages: {
+    fname: {
+      required:'必填'
+    },
+    phone: {
+      required:'必填',
+      minlength:'不得少於8位',
+      number:'電話需為數字'
+    },
+    email: {
+      required:'必填',
+      email:'Email格式不正確'
+    },
+    password: {
+      required:'必填',
+    },
+  },
+  submitHandler: function(form) {
+    form.submit();
+  }
+});
+
 	
 });
 

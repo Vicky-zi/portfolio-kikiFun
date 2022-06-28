@@ -1,0 +1,41 @@
+// index star
+
+.btn-reserve {
+	background-color:$primary;
+	text-decoration: none;
+	color:#fff;
+	border-radius:25px;
+	padding: 2% 8%;
+	position: absolute;
+	right: 8%;
+	
+	&:hover {
+		color:#40719e;
+		background-color: rgba(255, 255, 255, .6);
+
+	}
+}
+
+
+
+
+.button-success {
+	color:  #fff;
+	background-color: #9b9796;
+	margin-right: 5%;
+	
+}
+
+.button-error {
+	color:  #fff;
+	background-color: #40719e;
+}
+
+
+@media (max-width: 768px) {
+
+	.btn-reserve {
+		margin-top: 5%;
+	}
+
+}
