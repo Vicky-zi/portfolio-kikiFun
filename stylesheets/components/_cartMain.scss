@@ -79,6 +79,9 @@ input[type="search"] {
 	 background-color: #efe9e7;
 }
 .pure-button {
+	height: 100%;
+	background-image: url('../../assets/icon-search.png');
+    background-size: cover;
 	position: absolute;
  	top: 0;
 	right: 0; 
@@ -263,3 +266,14 @@ input[type="search"] {
 		display: none;
 	}
 }
+
+
+@media (max-width: 576px) {
+
+	.moblie-link {
+		height: 24px;
+	}
+	
+
+}
+

@@ -180,10 +180,8 @@ since IE8 won't execute CSS that contains a CSS3 selector.
 .pure-form input[readonly],
 .pure-form select[readonly],
 .pure-form textarea[readonly] {
-  background-color: #eee;
-  /* menu hover bg color */
-  color: #777;
-  /* menu text color */
+  background-color: #eee; /* menu hover bg color */
+  color: #777; /* menu text color */
   border-color: #ccc;
 }
 
@@ -395,20 +393,8 @@ since IE8 won't execute CSS that contains a CSS3 selector.
   height: 24px;
 }
 
-.pure-button-hover,
-.pure-button:hover,
-.pure-button:focus {
-  background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.05) 40%, rgba(0, 0, 0, 0.1));
-}
-
 .pure-button:focus {
   outline: 0;
-}
-
-.pure-button-active,
-.pure-button:active {
-  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15) inset, 0 0 6px rgba(0, 0, 0, 0.2) inset;
-  border-color: #000;
 }
 
 .pure-button[disabled],
@@ -511,11 +497,9 @@ a.pure-button-selected {
   .top-blank {
     height: 13%;
   }
-
   .logo a {
     float: right;
   }
-
   .menu {
     max-height: 0px;
     overflow: hidden;
@@ -543,17 +527,14 @@ a.pure-button-selected {
     color: #fff;
     cursor: pointer;
   }
-
   .min-menu {
     margin: 0 0 0 -20%;
   }
-
   .showmenu {
     display: block;
     float: right;
     margin: 1em;
   }
-
   /*jQ點擊後動態在 body 加上 class */
   .menu-show .menu {
     max-height: 500px;
@@ -613,16 +594,13 @@ a.pure-button-selected {
   .footer {
     flex-direction: column;
   }
-
   .sinbar-1, .sinbar-2, .sinbar-3 {
     width: 100%;
   }
-
   .sinbar-3 img {
     float: right;
     margin: 10% 0;
   }
-
   .nav {
     float: right;
     bottom: 0;
@@ -630,14 +608,16 @@ a.pure-button-selected {
   }
 }
 @media (max-width: 576px) {
+  .sinbar-3 {
+    margin-bottom: 6%;
+  }
   .sinbar-3 img {
     float: left;
-    margin: 0;
   }
-
   .nav {
-    bottom: 40px;
+    bottom: 10px;
     right: 20px;
+    margin: 5% 0;
   }
 }
 .top {
@@ -719,15 +699,12 @@ a.pure-button-selected {
     margin: 3% 0;
     line-height: 28px;
   }
-
   .line {
     display: none;
   }
-
   .nav-top {
     padding: 0 7%;
   }
-
   .nav-top li {
     width: 100%;
     padding: 0 2%;
@@ -740,20 +717,16 @@ a.pure-button-selected {
   .top {
     position: relative;
   }
-
   .header {
     margin: 15% 0;
     line-height: 28px;
   }
-
   .line {
     display: none;
   }
-
   .nav-top {
     flex-direction: column;
   }
-
   .nav-top li {
     width: 100%;
     margin-top: 9%;
@@ -796,12 +769,10 @@ a.pure-button-selected {
   .content img {
     width: 100%;
   }
-
   .container {
     padding: 10% 9% 20% 9%;
     line-height: 22px;
   }
-
   .container h4 {
     font-size: 20px;
     margin-bottom: 2%;
@@ -812,12 +783,10 @@ a.pure-button-selected {
     flex-direction: column;
     padding: 0;
   }
-
   .container {
-    padding: 20% 9%;
+    padding: 10% 9% 20% 9%;
     line-height: 22px;
   }
-
   .container h4 {
     font-size: 20px;
     margin-bottom: 2%;
@@ -866,7 +835,6 @@ a.pure-button-selected {
     margin: 5% 0;
     font-size: 26px;
   }
-
   .nav-min p {
     line-height: 20px;
     margin-left: 0;
@@ -877,7 +845,6 @@ a.pure-button-selected {
   .nav-min {
     flex-direction: column;
   }
-
   .nav-min p {
     margin-left: 85px;
     line-height: 24px;
@@ -1100,6 +1067,9 @@ input[type=search]::placeholder {
 }
 
 .pure-button {
+  height: 100%;
+  background-image: url("../../assets/icon-search.png");
+  background-size: cover;
   position: absolute;
   top: 0;
   right: 0;
@@ -1230,11 +1200,9 @@ input[type=search]::placeholder {
   .warp {
     position: relative;
   }
-
   .main-2 {
     position: relative;
   }
-
   .aside {
     position: absolute;
     width: 45%;
@@ -1245,33 +1213,26 @@ input[type=search]::placeholder {
     transition: all 0.3s;
     z-index: 99;
   }
-
   .open .aside {
     transform: translateX(-16px);
   }
-
   .column {
     margin: 0 auto;
   }
-
   .moblie-link {
     display: inline-block;
     float: right;
   }
-
   .column-t input {
     display: none;
   }
-
   .shopping h3, .shopping p {
     display: none;
   }
-
   .shopping img {
     position: relative;
     right: 5%;
   }
-
   .number {
     height: 1%;
     width: 3%;
@@ -1280,23 +1241,24 @@ input[type=search]::placeholder {
     bottom: 0;
     top: 0.5%;
   }
-
   .product {
     flex-direction: column;
     margin: 0 auto;
   }
-
   .product li {
     width: 100%;
   }
-
   .product h4 {
     font-size: 28px;
     margin: 5% 0;
   }
-
   .sinbar h3, .sinbar p {
     display: none;
+  }
+}
+@media (max-width: 576px) {
+  .moblie-link {
+    height: 24px;
   }
 }
 .longin-form {
@@ -1328,7 +1290,6 @@ input[type=search]::placeholder {
   .pure-form fieldset {
     padding: 3em 5em 7em 5em;
   }
-
   .longin-form {
     margin: 0 10%;
   }
@@ -1348,6 +1309,27 @@ input[type=search]::placeholder {
 .btn-reserve:hover {
   color: #40719e;
   background-color: rgba(255, 255, 255, 0.6);
+}
+
+.goTop {
+  position: fixed;
+  border-radius: 50px;
+  right: 3%;
+  bottom: 6%;
+  padding: 10px 16px;
+  font-size: 25px;
+  background: rgb(228, 228, 227);
+  color: #FAFCFD;
+  text-decoration: none;
+  transform: translateX(0);
+  transition: transform 0.2s;
+  z-index: 99;
+}
+.goTop:hover {
+  background: rgba(228, 228, 227, 0.6);
+}
+.goTop.hide {
+  transform: translateX(160%);
 }
 
 .button-success {
